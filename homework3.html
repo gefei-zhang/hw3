@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<head>
+<style>
+ul
+{
+	list-style-type:none;
+	margin: 40px 60px 40px 60px;
+	padding: 3px 3px 3px 3px;
+	overflow:hidden;
+	width:1600px;
+}
+
+li style1{
+	float:right;
+	font-family:Arial;
+	font-weight:600;
+	font-size:small;
+	color:#bebebe;
+	text-align:center;
+	padding:4px;
+	width:60px;
+}
+li style2{
+	float:left;
+	font-family:Verdana;
+	color:black;
+	text-align:center;
+	padding:4px;
+	width:80px;
+}
+a.one:link,a.one:visited
+{
+	color:#bebebe;
+	display:block;
+	text-decoration:none;
+}
+a.one:hover,a.one:active
+{
+color:black;
+}
+div sma{
+	font-family:Verdana;
+	font-size:small;
+	color:white;
+	text-align:left;
+	text-transform: uppercase;
+	top:60px;
+	left:60px;
+	position:relative;
+}
+div bi{
+	font-family:sans-serif;
+	font-size:xx-large;
+	color:white;
+	text-align:left;
+	text-transform: uppercase;
+	position:relative;
+	top:65px;
+	left:60px;
+}
+div yellow{
+	font-family:sans-serif;
+	font-weight:600;
+	font-size:x-small;
+	color:yellow;
+	text-align:left;
+	position:relative;
+	top:75px;
+	left:60px;
+	font-style:italic;
+}
+input[type="text"]{
+	width:280px;
+	height:40px;
+	position:relative;
+	top:90px;
+	left:60px
+}
+input[type="submit"]{
+	height:40px;
+	width:150px;
+	color:black;
+	background-color:yellow;
+	text-decoration:none;
+	border:none;
+	font-size:xx-small;
+	font-family:Verdana;
+	position:relative;
+	top:90px;
+	left:60px
+}
+input[type="submit"]:link,input[type="submit"]:visited
+{
+	color:black;
+	background-color:yellow;
+}
+input[type="submit"]:hover,input[type="submit"]:active
+{
+	color:white;
+	background-color:#20252D;
+}
+div sec{
+	float:left;
+	text-align:left;
+	padding:4px;
+	width:480px;
+}
+h1{
+	font-size:medium;
+	font-family:sans-serif;
+	color:black;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+p{
+	font-size:small;
+	font-family:Verdana;
+	color:gray;
+	font-weight:normal;
+}
+.crop {
+	background-image: url("glasses.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: -800px -300px;
+	background-size: 120%;
+	filter: grayscale(100%);
+	overflow:hidden;
+	min-height: 1000px;
+}
+div bg{
+	background-image:url("grid.png");
+	background-repeat: repeat;
+	float:left;
+	text-align:left;
+	background-color: #F6F6F6;
+	padding:4px;
+	width:380px;
+	background-blend-mode:overlay;
+	border:20px;
+}
+h2{
+	font-size:xx-large;
+	font-family:sans-serif;
+	color:black;
+	font-weight:normal;
+	line-height:100%;
+	text-align: center;
+}
+div button1{
+	position:relative;
+	font-size:normal;
+	font-family:Verdana;
+	background-color:#073B5E;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	width:100px;
+	height:50px;
+	padding:17px 40px;
+	left:115px;
+	top:20px;
+}
+div button1:link,div button1:visited
+{
+	color:#073B5E;
+	display:block;
+	text-decoration:none;
+}
+div button1:hover,div button1:active
+{
+	background-color:#192734;
+}
+.notebook{
+	width:1600px;
+	height:550px;
+	background-image:url(notebook.jpg);
+	background-color:#174B6E;
+	background-blend-mode:overlay;
+	background-repeat: no-repeat;
+	background-size: 1600px auto;
+	background-position: 0 -250px;
+	overflow:hidden;
+}
+h3{
+	font-size:x-large;
+	font-family:sans-serif;
+	color:white;
+	font-weight:500;
+	text-align: center;
+	text-transform: uppercase;
+}
+div wh{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:x-small;
+	color:white;
+	text-align:center;
+	font-style:italic;
+}
+div button2{
+	position:relative;
+	font-size:normal;
+	font-family:Verdana;
+	text-transform: uppercase;
+	background-color:yellow;
+	color:black;
+	font-weight:normal;
+	text-align:center;
+	width:100px;
+	height:50px;
+	padding:17px 40px;
+	left:680px;
+	top:40px;
+}
+div button2:link,div button2:visited
+{
+	background-color:yellow;
+	color:black;
+	display:block;
+	text-decoration:none;
+}
+div button2:hover,div button2:active
+{
+	background-color:black;
+	color:white;
+}
+h4{
+	font-size:medium;
+	font-family:sans-serif;
+	color:white;
+	font-weight:500;
+	text-align: center;
+	text-transform: uppercase;
+}
+div.img
+{
+	margin:3px;
+	border:1px;
+	height:auto;
+	width:60px;
+	float:left;
+	text-align:center;
+	position:relative;
+	top:30px;
+	left:630px;
+}
+div.img img
+{
+	display:inline;
+	margin:3px;
+	border:1px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   font-family: Arial;
+   font-weight: 600;
+   opacity:  1;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><style2>MENU</style2></li>
+<li><style1><a class = "one" target="_blank" href="page2.html#services">Services</a></style1></li>
+<li><style1><a class = "one" target="_blank" href="page2.html#projects">Projects</a></style1></li>
+<li><style1><a class = "one" target="_blank" href="page2.html#about">About</a></style1></li>
+</ul>
+
+<div style="position:relative">
+   <img src="lawyer.jpg"/>
+   <div style="position:absolute; left:5%; top:20%;background-color:#10405B;width:380px;height:450px;color:black">
+   		<div> <sma>DON&acuteT WAIT</sma></div>
+   		<div> <bi>improve</bi></div>
+   		<div><bi>your business</bi></div>
+   		<div><bi>today!</bi></div>
+   		<div> <yellow>- Get your hands on Biz Optima -</yellow></div>
+   		<input type="text" name="email" placeholder=" Email">
+   		<br>
+   		<br>
+   		<input type="submit" class = "button" value="SIGN UP FOR FREE!">
+   </div>
+</div>
+
+<div style="position:relative;top:150px;left:100px;width:1600px">
+	<div><sec>
+		<div style="width:380px">
+		<h1>Amazing Feature #1</h1>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricles. Donec mattis egestas nisl non pretium. Suspendisse nec eros ut erat facilisis maximus. In congue etleo in varius.<br>Vestibulum sit amet fells ornare, commodo orci ut, feugiat lorem.
+		</p>
+		</div>
+	</sec></div>	
+	<div><sec>
+		<div style="width:380px">
+		<h1>Amazing Feature #2</h1>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricles. Donec mattis egestas nisl non pretium. Suspendisse nec eros ut erat facilisis maximus. In congue etleo in varius.<br>Vestibulum sit amet fells ornare, commodo orci ut, feugiat lorem.
+		</p>
+		</div>
+	</sec></div>
+	<div><sec>
+		<div style="width:380px">
+		<h1>Amazing Feature #3</h1>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricles. Donec mattis egestas nisl non pretium. Suspendisse nec eros ut erat facilisis maximus. In congue etleo in varius.<br>Vestibulum sit amet fells ornare, commodo orci ut, feugiat lorem.
+		</p>
+		</div>
+	</sec></div>
+</div>
+
+<div style="position:relative;top:450px;background-color:#F4F4F4;width:1600px;height:420px;border:none;text-indent:0px">
+	<div style="position:absolute;top:180px;text-align:center;font-size:large;font-family:Verdana;color:black;text-transform: uppercase;width:1600px">
+		&quot I couldn't have asked for more than this. biz optima is the next killer app.&quot
+	</div>
+	<div style="color:#F4F4F4">
+		&quot I couldn't have asked for more than this. biz optima is the next killer app.&quot
+	</div>
+	<div style="position:absolute;font-weight:bold;top:240px;text-align:center;font-size:small;font-family:Arial;color:black;width:1600px">
+		<span style="color:black">John Doe</span>
+		<span style="color:gray">, CEO &amp Founder, Blz Optima</span>
+	</div>
+</div>
+
+<div style="position:relative;width:1600px;height:1200px;top:450px">
+	<div style="width:100%; height:100%;filter:opacity(0.5);overflow:hidden">
+		<div class="crop">
+		</div>
+	</div>
+	<div style="position:absolute;top:90px;text-align:center;font-size:large;font-family:sans-serif;color:black;text-transform: uppercase;width:1600px">
+		Prices
+	</div>
+	<div style="position:absolute;font-weight:normal;top:130px;text-align:center;font-size:small;font-family:Verdana;color:gray;width:1600px;text-transform: uppercase">
+		affordable for everyone
+	</div>
+	<div style="position:absolute;font-weight:normal;top:260px;left:100px;text-align:center;font-size:small;font-family:Verdana;color:gray;width:1600px">
+		<div><sec><div><bg>
+			<div style="width:380px;height:550px">
+			<h1 style="text-align: center;top:200px"><br><br><br>Basic Plan<br><br></h1>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#1</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#2</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#3</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#4</p>
+			<h2><br>&amp29.99<br>Monthly</h2>
+			<div><button1>
+				BUY NOW
+			</button1></div>
+			</div>
+		</bg></div></sec></div>
+		<div><sec><div><bg>
+			<div style="width:380px;height:550px">
+			<h1 style="text-align: center;top:200px"><br><br><br>standart Plan<br><br></h1>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#1</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#2</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#3</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#4</p>
+			<h2><br>&amp39.99<br>Monthly</h2>
+			<div><button1>
+				BUY NOW
+			</button1></div>
+			</div>
+		</bg></div></sec></div>
+		<div><sec><div><bg>
+			<div style="width:380px;height:550px">
+			<h1 style="text-align: center;top:200px"><br><br><br>corporate Plan<br><br></h1>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#1</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#2</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#3</p>
+			<p style="text-align: center;font-size:small"> Plan Amazing feature#4</p>
+			<h2><br>&amp49.99<br>Monthly</h2>
+			<a class="two" herf="#buynow">
+			<div><button1>
+				BUY NOW
+			</button1></div>
+			</div>
+		</bg></div></sec></div>
+	</div>
+</div>
+
+<div style="position:relative;width:1600px;top:250px">
+	<div class="notebook">
+		<h3><br><br><br><br><br>try the best app in the market</h3>
+		<p style="position:relative;top:-10px;font-family:Arial;font-weight:500;font-size:small;color:white;text-align:center;font-style:normal;line-height:100%">
+			tell more why your software is amazing and why users need to sign up
+		</p>
+		<div><button2>try it for free</button2></div>
+	</div>
+</div>
+
+<div style="position:relative;width:1600px;height:350px;top:200px;background-color: #1D2530">
+	<h4><br><br><br><br><br>biz optima</h4>
+	<p style="font-family:Arial;font-weight:normal;font-size:x-small;color:white;text-align:center">
+		224 Grant Ave, Redondo Beach, CA, 90278 310.555.1212 Ext. 3 for Business Needs<br>
+	</p>
+	<div class="img">
+		<a target="_blank" href="http://www.facebook.com">			
+			<img src="facebook.png" width='30' height='30'/>
+		</a>
+	</div>
+	<div class="img">
+		<a target="_blank" href="http://www.twitter.com">			
+			<img src="twitter.png" width='30' height='30'/>
+		</a>
+	</div>
+	<div class="img">
+		<a target="_blank" href="http://www.instagram.com">			
+			<img src="instagram.png" width='30' height='30'/>
+		</a>
+	</div>
+	<div class="img">
+		<a target="_blank" href="http://www.youtube.com">			
+			<img src="youtube.png" width='30' height='30'/>
+		</a>
+	</div>
+	<div class="img">
+		<a target="_blank" href="http://plus.google.com/">			
+			<img src="googleplus.png" width='30' height='30'/>
+		</a>
+	</div>
+</div>
+
+</body>
+</html>
